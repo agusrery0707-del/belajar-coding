@@ -1,1 +1,74 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>website agus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8cb00;
+            margin: 0px;
+            padding: 20px;
+            max-width: 800px;
+        }
+        h1 {
+            color: #f70404;
+            border-bottom: 2px solid #f70404;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3f10e9;
+        }
+        p {
+            color: #0a0a0a;
+        }
+        ul {
+            background-color: #ffffff;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            list-style-type: square;
+            color: #f10303;
+        }
+        li {
+            margin-bottom: 10px;
+        padding: 10px;
+        color: #2f03f1;
+        }
+        </style>
+    </head>
+    <body>
+
+    <h1>Selamat datang di website Agus</h1>
+    <h2>Ini adalah website pribadi saya</h2>
+    <p>Nama saya Agus,saya seorang pekerja lepas dan saya pertama kali belajar coding dari nol</p>
+    <h3>Hobi saya adalah olahraga fitnes</h3>
+    <ul>
+        <li>Senin: Latihan Kaki</li>
+        <li>Selasa: Latihan Dada</li>
+        <li>Rabu: Latihan Punggung</li>
+        <li>Kamis: Latihan Bahu</li>
+        <li>Jumat: Latihan Lengan</li>
+    </ul>
+    <h3>Kontak saya</h3>
+    <p>Email:agusrery0707@gmail.com</p>
+    <p>Instagram:@agus_rery</p>
+    </body></html>
+    <br>
+    <button onclick="sapa('Terima kasih sudah mengunjungi website saya!')">Klik saya</button>
+    <botton onclick="togglegelap"()">Mode Gelap</botton>
+    <p id="sapa"></p>
+    <script>
+        function sapa(pesan) {
+            document.getElementById('sapa').innerHTML =
+            "selamat datang di website saya,semoga harimu menyenangkan!";
+        }
+        function togglegelap() {
+            let body = document.body;
+            body.style.backgroundColor = body.style.backgroundColor === 'black' ? '#f8cb00' : 'black';
+            body.style.color = body.style.color === 'white' ? '#0a0a0a' : 'white';
+        }
+
+    </script>
+    </body>
+    </html>
